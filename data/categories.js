@@ -96,8 +96,8 @@ const categories = [
   },
 ];
 
-const getRecipeById = (id) => {
-  return categories.find((category) => category.id === id);
-};
+// const getRecipeById = (id) => {
+//   return categories.find((category) => category.id === id);
+// };
 
-export { getRecipeById };
+// export { getRecipeById };

@@ -1,8 +1,7 @@
 import Image from 'next/image';
 
 const Hero = async () => {
-  const response = await fetch(`${process.env.BASE_API_URL}/categories`);
-  const data = await response.json();
+  
 
   return (
     <section className='mb-16 bg-orange-50'>
@@ -21,7 +20,7 @@ const Hero = async () => {
           <p className='text-gray-600 mb-4'>
             Indulge in the ultimate Italian dessert experience with our velvety
             smooth tiramisu. Layers of coffee-soaked ladyfingers and creamy
-            mascarpone filling create a heavenly treat that's sure to impress.
+            mascarpone filling create a heavenly treat thats sure to impress.
           </p>
           <a
             href='./blog-details.html'
