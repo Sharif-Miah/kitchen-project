@@ -1,5 +1,8 @@
+import EmailForm from '@/components/EmailForm';
 import SuperDelicious from '@/components/Food/SuperDelicious';
+import HandPicked from '@/components/HandPicked';
 import Hero from '@/components/Hero';
+import LatestRecipi from '@/components/LatestRecipi';
 import PopularCategories from '@/components/popularCategory/PopularCategories';
 
 export default async function Home() {
@@ -8,6 +11,9 @@ export default async function Home() {
       <Hero />
       <SuperDelicious />
       <PopularCategories />
+      <EmailForm />
+      <HandPicked />
+      <LatestRecipi />
     </main>
   );
 }

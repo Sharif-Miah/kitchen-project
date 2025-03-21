@@ -16,7 +16,7 @@ const PopularCategories = async () => {
         </Link>
       </div>
       <div className='grid grid-cols-3 md:grid-cols-6 gap-4'>
-        {popularFood.slice(0, 6).map((popular) => (
+        {popularFood.slice(9, 15).map((popular) => (
           <PopularCard
             key={popular.category_id}
             popular={popular}

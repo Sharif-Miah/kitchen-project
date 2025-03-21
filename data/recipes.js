@@ -458,8 +458,8 @@ const getAllData = () => {
   return recipe;
 };
 
-const getOneData = (id) => {
+const getOneDataById = (id) => {
   return recipe.find((reci) => reci.category_id === id);
 };
 
-export { getAllData, getOneData };
+export { getAllData, getOneDataById };
