@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 const LatestRecipiCard = ({ recipi }) => {
-  console.log(recipi.name_categore);
   return (
     <div>
       <Image

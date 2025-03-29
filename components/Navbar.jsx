@@ -26,7 +26,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href='/'
+              href='/categories'
               className='hover:text-orange-500'>
               Categories
             </Link>
@@ -36,6 +36,13 @@ const Navbar = () => {
               href='/'
               className='hover:text-orange-500'>
               Latest Recipes
+            </Link>
+          </li>
+          <li>
+            <Link
+              href='/delicious'
+              className='hover:text-orange-500'>
+              Super Delicious
             </Link>
           </li>
         </ul>
