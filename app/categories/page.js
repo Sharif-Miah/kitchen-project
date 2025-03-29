@@ -1,4 +1,5 @@
 import PopularCard from '@/components/popularCategory/PopularCard';
+import Link from 'next/link';
 
 const CategoriesPage = async () => {
   const response = await fetch(`${process.env.BASE_API_URL}/categories`);
@@ -11,10 +12,11 @@ const CategoriesPage = async () => {
       </div>
       <div className='grid grid-cols-3 md:grid-cols-6 gap-4'>
         {category.map((popular) => (
-          <PopularCard
-            key={popular.category_id}
-            popular={popular}
-          />
+          <Link
+            href={`/categories/category/${popular.category_id}`}
+            key={popular.category_id}>
+            <PopularCard popular={popular} />
+          </Link>
         ))}
       </div>
     </section>

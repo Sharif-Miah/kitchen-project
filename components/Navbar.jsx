@@ -33,7 +33,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href='/'
+              href='/latestRecipes'
               className='hover:text-orange-500'>
               Latest Recipes
             </Link>

@@ -1,6 +1,8 @@
 import Image from 'next/image';
 
 const LatestRecipiCard = ({ recipi }) => {
+  // console.log(recipi.description, recipi.sharif);
+  console.log(recipi.author);
   return (
     <div>
       <Image
@@ -13,7 +15,9 @@ const LatestRecipiCard = ({ recipi }) => {
       <h3 className='text-lg font-semibold mb-2'>
         {recipi.title.slice(0, 20)}
       </h3>
-      <p className='text-gray-600'>Dessert</p>
+      <p className='text-gray-600'>
+        {recipi.title.slice(0, 10) || 'No category'}
+      </p>
     </div>
   );
 };
